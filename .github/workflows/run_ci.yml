@@ -24,6 +24,6 @@ jobs:
             environments: |
                 develop: dev
                 test: test
-                prod: main
+                main: prod
         secrets:
             cloud_token: '${{ secrets.CLOUD_PROVIDER_SECRET }}'
