@@ -21,6 +21,7 @@ jobs:
         uses: iac-pipeline/iac-pipeline/.github/workflows/terraform_ci.yml@develop
         with:
             iac_technology: "Terraform"
+            cloud_provider: "GCP"
             environments: |
                 develop: dev
                 test: test
