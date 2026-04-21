@@ -1,0 +1,33 @@
+16:25:30.469 STDOUT terraform: Terraform used the selected providers to generate the following execution
+16:25:30.469 STDOUT terraform: plan. Resource actions are indicated with the following symbols:
+16:25:30.469 STDOUT terraform: -/+ destroy and then create replacement
+16:25:30.469 STDOUT terraform: Terraform will perform the following actions:
+16:25:30.469 STDOUT terraform:   # google_storage_bucket.bucket must be replaced
+16:25:30.469 STDOUT terraform: -/+ resource "google_storage_bucket" "bucket" {
+16:25:30.469 STDOUT terraform:       - default_event_based_hold    = false -> null
+16:25:30.469 STDOUT terraform:       - enable_object_retention     = false -> null
+16:25:30.469 STDOUT terraform:       ~ id                          = "test_bucket_0503-prod" -> (known after apply)
+16:25:30.469 STDOUT terraform:       - labels                      = {} -> null
+16:25:30.469 STDOUT terraform:       ~ name                        = "test_bucket_0503-prod" -> "test_bucket_0503-prod-2" # forces replacement
+16:25:30.469 STDOUT terraform:       ~ project_number              = 379193353600 -> (known after apply)
+16:25:30.469 STDOUT terraform:       ~ public_access_prevention    = "inherited" -> (known after apply)
+16:25:30.469 STDOUT terraform:       - requester_pays              = false -> null
+16:25:30.469 STDOUT terraform:       + rpo                         = (known after apply)
+16:25:30.469 STDOUT terraform:       ~ self_link                   = "https://www.googleapis.com/storage/v1/b/test_bucket_0503-prod" -> (known after apply)
+16:25:30.470 STDOUT terraform:       ~ time_created                = "2026-03-21T15:23:31.391Z" -> (known after apply)
+16:25:30.470 STDOUT terraform:       ~ uniform_bucket_level_access = false -> (known after apply)
+16:25:30.470 STDOUT terraform:       ~ updated                     = "2026-03-21T15:23:31.391Z" -> (known after apply)
+16:25:30.470 STDOUT terraform:       ~ url                         = "gs://test_bucket_0503-prod" -> (known after apply)
+16:25:30.470 STDOUT terraform:         # (6 unchanged attributes hidden)
+16:25:30.470 STDOUT terraform:       - hierarchical_namespace {
+16:25:30.470 STDOUT terraform:           - enabled = false -> null
+16:25:30.470 STDOUT terraform:         }
+16:25:30.470 STDOUT terraform:       ~ soft_delete_policy (known after apply)
+16:25:30.470 STDOUT terraform:       - soft_delete_policy {
+16:25:30.470 STDOUT terraform:           - effective_time             = "2026-03-21T15:23:31.391Z" -> null
+16:25:30.470 STDOUT terraform:           - retention_duration_seconds = 604800 -> null
+16:25:30.470 STDOUT terraform:         }
+16:25:30.470 STDOUT terraform:       ~ website (known after apply)
+16:25:30.470 STDOUT terraform:         # (1 unchanged block hidden)
+16:25:30.470 STDOUT terraform:     }
+16:25:30.470 STDOUT terraform: Plan: 1 to add, 0 to change, 1 to destroy.
