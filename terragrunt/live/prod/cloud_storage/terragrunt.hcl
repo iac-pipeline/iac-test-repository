@@ -3,7 +3,7 @@ terraform {
 }
 
 inputs = {
-  bucket_name        = "test_bucket_0503-test"
+  bucket_name        = "test_bucket_0503-prod"
   location           = "europe-west2"
   force_destroy      = false
   versioning_enabled = true
