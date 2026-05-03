@@ -19,7 +19,7 @@ permissions:
 
 jobs:
     run-ci:
-        uses: iac-pipeline/iac-pipeline/.github/workflows/terraform_ci.yml@develop
+        uses: iac-pipeline/iac-pipeline/.github/workflows/terraform_ci.yml@main
         with:
             iac_technology: "Terraform"
             iac_technology_version: "1.7.5"
