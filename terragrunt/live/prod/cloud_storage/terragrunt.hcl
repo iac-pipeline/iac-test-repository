@@ -5,7 +5,7 @@ terraform {
 inputs = {
   bucket_name        = "test_bucket_0503-prod"
   location           = "europe-west2"
-  force_destroy      = false
+  force_destroy      = true
   versioning_enabled = true
   project            = "iac-pipeline-486415"
 }
